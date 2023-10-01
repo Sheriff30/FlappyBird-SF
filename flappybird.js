@@ -145,7 +145,6 @@ function movebird(e) {
 }
 
 function movebird2(e) {
-  e.preventDefault();
   movingBird = -6;
 
   if (gameOver) {
@@ -154,6 +153,8 @@ function movebird2(e) {
     score = 0;
     gameOver = false;
   }
+  e.preventDefault();
+  e.target.click();
 }
 
 function logic(a, b) {

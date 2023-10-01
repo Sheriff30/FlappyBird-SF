@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 body {
   display: flex;

@@ -144,7 +144,8 @@ function movebird(e) {
   }
 }
 
-function movebird2() {
+function movebird2(e) {
+  e.preventDefault();
   movingBird = -6;
 
   if (gameOver) {

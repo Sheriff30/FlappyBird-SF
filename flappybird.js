@@ -59,7 +59,7 @@ window.onload = function () {
   requestAnimationFrame(update);
   setInterval(placePipes, 1500);
   document.addEventListener("keydown", movebird);
-  document.addEventListener("touchstart", movebird);
+  document.addEventListener("touchstart", movebird2);
 };
 
 function update() {
@@ -141,6 +141,17 @@ function movebird(e) {
       score = 0;
       gameOver = false;
     }
+  }
+}
+
+function movebird2() {
+  movingBird = -6;
+
+  if (gameOver) {
+    bird.y = birdY;
+    pipeArray = [];
+    score = 0;
+    gameOver = false;
   }
 }
 
